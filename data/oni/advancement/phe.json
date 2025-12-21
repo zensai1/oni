@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "hit_player": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {}
+        },
+        "entity": {
+          "type": "minecraft:player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oni:game/phe"
+  }
+}

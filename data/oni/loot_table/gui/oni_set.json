@@ -1,0 +1,63 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:dyed_color": 16189448
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "鬼を決める",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "鬼の数：",
+                  "color": "green",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "***",
+                        "objective": "Znsi.oni"
+                      },
+                      "extra": [
+                        {
+                          "text": "人"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:dyed_color": false,
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

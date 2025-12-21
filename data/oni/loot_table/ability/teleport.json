@@ -1,0 +1,54 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                  "text": "魔法の杖【転移】",
+                  "color": "gold",
+                  "bold": true,
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "右クリックでセットしてる魔法を使用できる。",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "捨てるキーで魔法を切り替えられる",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cooltime:5秒(転移前)",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cooltime:40秒(転移後)",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
