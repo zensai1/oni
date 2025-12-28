@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:binding_curse": 1
+              },
+              "add": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false,
+                "minecraft:unbreakable": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

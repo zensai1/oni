@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "oni:game/phe"
+    "function": "oni:game/touch/phe"
   }
 }

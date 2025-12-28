@@ -1,3 +1,6 @@
+#>oni:game/finish
+
+
 tellraw @a [{"color":"gold","text":"今回の勝者は["},{"bold":true,"color":"gold","selector":"@a[team=nige]"},{"color":"gold","text":"]です"}]
 clear @a
 effect clear @a

@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bell",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                  "text": "ゲームを開始する",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -10,7 +10,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:dyed_color": 16009288
+                "minecraft:dyed_color": 16009288,
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:enchantment_glint_override": false
               }
             },
             {
@@ -18,9 +22,17 @@
               "entity": "this",
               "target": "item_name",
               "name": {
-                "text": "鬼を決める",
+                "text": "鬼の証",
                 "color": "red",
                 "italic": false
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false,
+                "minecraft:dyed_color": false,
+                "minecraft:enchantments": false
               }
             }
           ]

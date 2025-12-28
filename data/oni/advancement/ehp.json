@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "oni:game/ehp"
+    "function": "oni:game/touch/ehp"
   }
 }

@@ -1,55 +1,50 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:heavy_core",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": {
-                  "text": "範囲",
-                  "color": "light_purple",
-                  "italic": false
-                }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": "現在：",
-                    "color": "green",
-                    "italic": false,
-                    "extra": [
-                      {
-                        "score": {
-                          "name": "***",
-                          "objective": "Znsi.range"
-                        },
-                        "color": "green",
-                        "italic": false,
-                        "extra": [
-                          {
-                            "text": "ブロック",
-                            "color": "green",
-                            "italic": false
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "mode": "replace_all"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heavy_core",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "範囲",
+                "color": "gold",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の設定：",
+                  "color": "green",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "storage": "oni:",
+                      "nbt": "Setting.Range",
+                      "extra": [
+                        "×",
+                        {
+                          "nbt": "Setting.Range",
+                          "storage": "oni:"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "MP",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16758465
+                }
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の設定：",
+                  "type": "text",
+                  "extra": [
+                    {
+                      "nbt": "Setting.MP",
+                      "storage": "oni:",
+                      "source": "storage"
+                    }
+                  ],
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:potion_contents": false
+              }
+            }
+          ]
+        }
+      ],
+      "functions": []
+    }
+  ],
+  "functions": []
+}
