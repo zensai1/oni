@@ -3,6 +3,7 @@
 
 ##殴られた人の処理
     execute if entity @s[predicate=oni:effect/hero_of_the_village] run playsound minecraft:block.anvil.place record @s ~ ~ ~ 1 1.5
+    execute if entity @s[predicate=!oni:effect/hero_of_the_village] run tag @s remove Nige_Pom
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] run team join oni @s
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] run attribute @s movement_speed base set 0.15
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] run effect clear @s weakness
@@ -20,6 +21,8 @@
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] on attacker run item replace entity @s armor.head with air
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] on attacker run scoreboard players set @s Znsi.CoolDown 0
     execute if entity @s[predicate=!oni:effect/hero_of_the_village] on attacker run tag @s add TEMP_Touch
+    execute if entity @s[predicate=!oni:effect/hero_of_the_village] on attacker run clear @s snowball
+    execute if entity @s[predicate=!oni:effect/hero_of_the_village] on attacker run scoreboard players reset @s Znsi.OniTime
 
 
 ##アナウンス

@@ -1,49 +1,72 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:carrot_on_a_stick",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": {
-                  "text": "魔法の杖【飛躍】",
-                  "color": "gold",
-                  "bold": true,
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "魔法の杖【飛躍】",
+                "color": "gold",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "keybind": "key.use",
+                  "extra": [
+                    "で使用"
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "keybind": "key.drop",
+                  "extra": [
+                    "で異能を切り替える"
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "5秒間動けなくなり、5秒後空中に射出される",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "射出時にエリトラを装備し飛ぶことができる",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "keybind": "key.sneak",
+                  "extra": [
+                    "でキャンセルすることができる"
+                  ],
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "CoolDown：80秒",
+                  "color": "aqua",
                   "italic": false
                 }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": "右クリックでセットしてる魔法を使用できる。",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": "捨てるキーで魔法を切り替えられる",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": "Cooltime:30秒",
-                    "color": "aqua",
-                    "italic": false
-                  }
-                ],
-                "mode": "replace_all"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

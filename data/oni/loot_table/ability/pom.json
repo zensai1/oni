@@ -12,7 +12,7 @@
               "entity": "this",
               "target": "item_name",
               "name": {
-                "text": "魔法の杖【天翔】",
+                "text": "魔法の杖【安寧】",
                 "color": "gold",
                 "bold": true,
                 "italic": false
@@ -39,12 +39,22 @@
                   "italic": false
                 },
                 {
-                  "text": "向いてる方向に飛ぶ",
+                  "text": "逃げ側：30秒間鬼にならなくなるが動くと解除される",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "CoolDown：20秒",
+                  "text": "鬼側：動いてる別陣営の人に発光を付与する",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "CoolDown：45秒(逃げ側)",
+                  "color": "aqua",
+                  "italic": false
+                },
+                {
+                  "text": "CoolDown：30秒(鬼側)",
                   "color": "aqua",
                   "italic": false
                 }

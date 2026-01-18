@@ -1,4 +1,5 @@
-#>oni:ability/sound_explosion/
+#>oni:ability/pom/
+#安寧
 
 
 ##
@@ -16,12 +17,17 @@
 
 
 ##逃げ側
-    execute if entity @s[team=nige] at @s as @a[distance=..20,team=oni] run tag @s add Sound_Explosion
+    execute if entity @s[team=nige] run effect give @s hero_of_the_village 30 0 true
+    execute if entity @s[team=nige] run tag @s add Nige_Pom
 
 
 ##鬼側
-    execute if entity @s[team=oni] at @s as @a[distance=..20,team=nige] run tag @s add Sound_Explosion
+    execute if entity @s[team=oni] as @a[team=nige,predicate=oni:move/sprint] run effect give @s glowing 20 0 true
 
 
-##内部処理
-    scoreboard players set @s Znsi.CoolDown 30
+    playsound minecraft:item.mace.smash_ground record @s
+
+    
+##CoolDown
+    execute if entity @s[team=nige] run scoreboard players set @s Znsi.CoolDown 45
+    execute if entity @s[team=oni] run scoreboard players set @s Znsi.CoolDown 30

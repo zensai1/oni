@@ -14,6 +14,7 @@
     effect give @a[team=nige] weakness infinite 255 true
     tp @a @s
     loot give @a loot oni:magic_rod
+    scoreboard players set @a Znsi.Drop.Carrotstick 1
     effect give @a[team=oni] blindness 10 0 true
     effect give @a[team=oni] weakness 10 255 true
     execute as @a[team=oni] run tag @s add Chenge
@@ -32,6 +33,7 @@
 
 ##Time
     schedule function oni:timer/remove 1s
+    $execute store result score $erase Znsi.Time run random value 30..$(Time)
 
 
 ##異能抽選

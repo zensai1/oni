@@ -16,15 +16,15 @@
 
 
 ##逃げ側
-    execute if entity @s[team=nige] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=oni] run tag @s add Restraint
-    execute if entity @s[team=nige] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=oni] run playsound minecraft:block.chain.place record @s
+    execute if entity @s[team=nige] at @s as @a[distance=..30,team=oni] run tag @s add Restraint
+    execute if entity @s[team=nige] at @s as @a[distance=..30,team=oni] run playsound minecraft:entity.elder_guardian.curse record @s
 
 
 ##鬼側
-    execute if entity @s[team=oni] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=nige] run tag @s add Restraint
-    execute if entity @s[team=oni] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=nige] run playsound minecraft:block.chain.place record @s
+    execute if entity @s[team=oni] at @s as @a[distance=..30,team=nige] run tag @s add Restraint
+    execute if entity @s[team=oni] at @s as @a[distance=..30,team=nige] run playsound minecraft:entity.elder_guardian.curse record @s
 
 
 ##
-    playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.75
+    playsound minecraft:block.chain.place record @s
     scoreboard players set @s Znsi.CoolDown 35

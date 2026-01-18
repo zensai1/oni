@@ -17,6 +17,7 @@
 ##TPさせる
     $tp @s $(x) $(y) $(z)
     execute positioned as @s run playsound block.respawn_anchor.deplete record @s
+    effect give @s glowing 3 0 true
 
 
 ##内部処理

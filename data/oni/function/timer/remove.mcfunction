@@ -10,6 +10,10 @@
     function oni:timer/ with storage oni: Game
 
 
+##eraseと同じだったらサイドバー削除
+    execute if score *** Znsi.Time = $erase Znsi.Time run scoreboard objectives setdisplay sidebar
+
+
 ##1秒以上だったら再帰
     execute if score *** Znsi.Time matches 1.. run schedule function oni:timer/remove 1s
 

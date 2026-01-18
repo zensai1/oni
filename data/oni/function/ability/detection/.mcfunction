@@ -16,12 +16,13 @@
 
 
 ##逃げ側
-    execute if entity @s[team=nige] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=oni] run effect give @s glowing 20 0 true
+    execute if entity @s[team=nige] at @s as @a[distance=..15,team=oni] run effect give @s glowing 20 0 true
+    execute if entity @s[team=nige] at @s as @a[distance=..15,team=oni] run playsound minecraft:block.glass.break record @s ~ ~ ~ 1 1.5
 
 
 ##鬼側
-    execute if entity @s[team=oni] at @s positioned ~-15 ~-15 ~-15 as @a[dx=29,dy=29,dz=29,team=nige] run effect give @s glowing 20 0 true
-
+    execute if entity @s[team=oni] at @s as @a[distance=..15,team=nige] run effect give @s glowing 20 0 true
+    execute if entity @s[team=oni] at @s as @a[distance=..15,team=nige] run playsound minecraft:block.glass.break record @s ~ ~ ~ 1 1.5
 
 ##
     playsound entity.illusioner.prepare_blindness record @s

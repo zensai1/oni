@@ -1,49 +1,64 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:carrot_on_a_stick",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": {
-                  "text": "魔法の杖【変装】",
-                  "color": "gold",
-                  "bold": true,
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "魔法の杖【変装】",
+                "color": "gold",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "keybind": "key.use",
+                  "extra": [
+                    "で使用"
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "keybind": "key.drop",
+                  "extra": [
+                    "で異能を切り替える"
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "逃げ側：20秒間鬼の帽子を被る",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "鬼側：20秒間帽子を外す",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "CoolDown：40秒",
+                  "color": "aqua",
                   "italic": false
                 }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": "右クリックでセットしてる魔法を使用できる。",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": "捨てるキーで魔法を切り替えられる",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": "Cooltime:30秒",
-                    "color": "aqua",
-                    "italic": false
-                  }
-                ],
-                "mode": "replace_all"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

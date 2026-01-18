@@ -22,4 +22,4 @@
 
 
 ##CoolDown
-    scoreboard players set @s Znsi.CoolDown 40
+    scoreboard players set @s Znsi.CoolDown 80

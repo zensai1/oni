@@ -19,6 +19,9 @@
     scoreboard objectives add Znsi.LeapTime dummy "飛躍用"
     scoreboard objectives add Znsi.SoundTime dummy "音爆用"
     scoreboard objectives add Znsi.ChengeTime dummy "鬼交代"
+    scoreboard objectives add Znsi.Use.SnowBall used:snowball "発光玉"
+    scoreboard objectives add Znsi.OniTime dummy "鬼になってる時間"
+    scoreboard objectives add Znsi.Pos.Y dummy "Y座標用"
 
 
 ##Team
@@ -42,10 +45,10 @@
 
 ##Storage
     data modify storage oni: State set value waiting
-    data modify storage oni: pool set value [0,1,2,3,4,5,6,7,8,9,10]
+    data modify storage oni: pool set value [0,1,2,3,4,5,6,7,8,9,10,11,12]
     data modify storage temp: pool set from storage oni: pool
     data remove storage temp: result
-    data modify storage oni: ability.name set value ["天翔","隠遁","転移","変装","探知","偵察","抑制","吸引","無敵","飛躍","音爆"]
+    data modify storage oni: ability.name set value ["天翔","隠遁","転移","変装","探知","偵察","抑制","吸引","無敵","飛躍","音爆","安寧","蒼穹"]
     data remove storage oni: ability.pool
     data remove storage oni: ability.poolname
 

@@ -16,8 +16,8 @@
 
 
 ##吸い込む人たちの選定
-    execute if entity @s[team=nige] at @s positioned ~-5 ~-5 ~-5 as @a[dx=9,dy=9,dz=9,team=oni] run tag @s add Suction
-    execute if entity @s[team=oni] at @s positioned ~-5 ~-5 ~-5 as @a[dx=9,dy=9,dz=9,team=nige] run tag @s add Suction
+    execute if entity @s[team=nige] at @s as @a[distance=..7.5,team=oni] run tag @s add Suction
+    execute if entity @s[team=oni] at @s as @a[distance=..7.5,team=nige] run tag @s add Suction
     execute if entity @s[team=nige] run tp @a[tag=Suction,team=oni] @s
     execute if entity @s[team=oni] run tp @a[tag=Suction,team=nige] @s
     execute as @a[tag=Suction] at @s run playsound minecraft:entity.breeze.idle_ground record @s
@@ -33,3 +33,5 @@
 ##内部処理
     playsound minecraft:entity.breeze.idle_ground record @s
     scoreboard players set @s Znsi.CoolDown 40
+
+    

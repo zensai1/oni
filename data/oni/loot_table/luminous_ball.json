@@ -5,16 +5,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:snowball",
           "functions": [
             {
               "function": "minecraft:set_name",
               "entity": "this",
-              "target": "item_name",
               "name": {
-                "text": "魔法の杖【天翔】",
-                "color": "gold",
-                "bold": true,
+                "text": "発光玉",
+                "color": "light_purple",
                 "italic": false
               }
             },
@@ -27,29 +25,16 @@
                   "extra": [
                     "で使用"
                   ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "逃げ側が10秒間発光する",
                   "color": "green",
-                  "italic": false
-                },
-                {
-                  "keybind": "key.drop",
-                  "extra": [
-                    "で異能を切り替える"
-                  ],
-                  "color": "green",
-                  "italic": false
-                },
-                {
-                  "text": "向いてる方向に飛ぶ",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "CoolDown：20秒",
-                  "color": "aqua",
                   "italic": false
                 }
               ],
-              "mode": "replace_all"
+              "mode": "append"
             }
           ]
         }

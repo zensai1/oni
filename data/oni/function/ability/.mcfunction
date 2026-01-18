@@ -2,6 +2,7 @@
 
 
 playsound minecraft:block.dispenser.dispense record @s
+clear @s carrot_on_a_stick
 
 ##配列をいじる準備
     scoreboard players add @s Znsi.Array 1
